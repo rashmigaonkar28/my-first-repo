@@ -1,8 +1,8 @@
-class Addition extends Thread {
+class Subtraction extends Thread {
 	int a, b;
 	String title;
 
-	Addition(String title, int a, int b) {
+	Subtraction(String title, int a, int b) {
 		super(title);
 		this.title = title;
 		this.a = a;
@@ -12,8 +12,8 @@ class Addition extends Thread {
 
 	public void run() {
 		System.out.println(this);
-		int c = a + b;
-		System.out.println("Addition:" + c);
+		int c = a - b;
+		System.out.println("Subtraction:" + c);
 	}
 }
 
